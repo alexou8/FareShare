@@ -1,0 +1,45 @@
+# FastAPI: The main web framework for building APIs
+fastapi
+# Uvicorn: ASGI server to run FastAPI apps
+uvicorn
+# Pydantic: Data validation and settings management
+pydantic
+
+# Database - Async SQLAlchemy with PostgreSQL + PostGIS support
+sqlalchemy[asyncio]>=2.0.0  # Async SQLAlchemy ORM
+asyncpg  # Async PostgreSQL driver (replaces psycopg2)
+alembic  # Database migrations
+geoalchemy2  # PostGIS geometry/geography support
+psycopg2-binary  # Sync driver (for Alembic migrations)
+shapely  # Python library for manipulation and analysis of geometric objects
+
+# Authentication and security
+python-jose[cryptography]  # For JWT tokens
+passlib[bcrypt]  # Password hashing
+bcrypt  # Bcrypt hashing algorithm
+python-multipart  # Form data handling
+fastapi-mail  # Email system for verification emails
+email-validator  # For email validation
+
+
+# Environment variables
+python-dotenv
+
+# HTTP client for external APIs
+httpx
+
+# Geolocation (for ride-sharing features)
+geopy
+
+# WebSockets for real-time updates
+websockets
+
+# Testing
+pytest
+pytest-asyncio
+
+# Optional but recommended
+redis  # For caching and message broker
+celery  # For background tasks
+phonenumbers  # For phone number validation
+python-dateutil  # Extended datetime functionality

@@ -1,0 +1,24 @@
+{
+    "name": "fareshare",
+    "version": "1.0.0",
+    "description": "Ride sharing site",
+    "scripts": {
+        "start": "node start.js",
+        "dev": "node start.js",
+        "setup": "npm install && cd frontend && npm install",
+        "dev:backend": "cd backend && .\\venv\\Scripts\\python -m uvicorn app:app --reload --host 0.0.0.0 --port 8000",
+        "dev:frontend": "cd frontend && npm run dev",
+        "install:all": "npm run install:frontend && npm run install:backend",
+        "install:frontend": "cd frontend && npm install",
+        "install:backend": "cd backend && .\\venv\\Scripts\\pip install -r requirements.txt"
+    },
+    "keywords": [
+        "rideshare",
+        "fareshare"
+    ],
+    "author": "",
+    "license": "",
+    "devDependencies": {
+        "concurrently": "^9.1.2"
+    }
+}

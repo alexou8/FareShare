@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+    /* Primary Colors */
+    --color-primary: #fc4a1a;
+    --color-primary-rgb: 252, 74, 26;
+
+    /* Secondary Colors */
+    --color-secondary: #f4c277;
+    --color-secondary-rgb: 244, 194, 119;
+
+    /* Background/Neutral Colors */
+    --color-background-warm: #fef3e2;
+    --color-background-warm-rgb: 254, 243, 226;
+
+    --color-background-cool: #e2e8f0;
+    --color-background-cool-rgb: 226, 232, 240;
+
+    /* Accent Color */
+    --color-accent: #3bbdca;
+    --color-accent-rgb: 59, 189, 202;
+}
+
+/* Make all white backgrounds semi-transparent */
+.bg-white {
+    background-color: rgba(255, 255, 255, 0.65) !important;
+    backdrop-filter: blur(8px);
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+/* Focus ring styling for inputs */
+input:focus,
+textarea:focus,
+select:focus {
+    --tw-ring-color: var(--color-accent);
+}
+
+html,
+body,
+#root {
+    height: 100%;
+}
